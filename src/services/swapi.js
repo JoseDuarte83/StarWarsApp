@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = 'https://swapi.info/api/';
+const API_BASE_URL = 'https://swapi.py4e.com/api/';
 
 export const fetchEntities = async (type, page = 1)=>{
     try {
@@ -9,7 +9,6 @@ export const fetchEntities = async (type, page = 1)=>{
     }catch (error){
         console.error(`Error fetching ${type} : `, error);
         throw error;
-
     }
 };
 
